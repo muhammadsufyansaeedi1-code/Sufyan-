@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jarvis</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">J</div>
+          <div>
+            <p class="eyebrow">System</p>
+            <h1>JARVIS</h1>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <button class="nav-item active">Command Center</button>
+          <button class="nav-item">Status</button>
+          <button class="nav-item">Intel</button>
+          <button class="nav-item">Security</button>
+        </nav>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Operational status</p>
+            <h2>All systems online</h2>
+          </div>
+          <button id="voiceButton" class="voice-button">Listen</button>
+        </header>
+
+        <section class="hero">
+          <div class="status-pill">
+            <span class="dot"></span>
+            Protocol active
+          </div>
+          <h3>Good evening, sir.</h3>
+          <p>
+            I am Jarvis, your personal AI assistant. Ask me for the time, status, or a quick system report.
+          </p>
+        </section>
+
+        <section class="chat-card">
+          <div id="chatLog" class="chat-log" aria-live="polite">
+            <div class="message assistant">
+              <strong>Jarvis:</strong> Ready to assist.
+            </div>
+          </div>
+
+          <form id="chatForm" class="chat-form">
+            <input
+              id="promptInput"
+              type="text"
+              placeholder="Ask Jarvis something..."
+              autocomplete="off"
+            />
+            <button type="submit">Send</button>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

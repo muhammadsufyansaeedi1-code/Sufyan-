@@ -1,0 +1,16 @@
+{
+  "name": "jarvis-assistant",
+  "version": "1.0.0",
+  "description": "A local Jarvis-inspired AI assistant",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "jarvis",
+    "assistant",
+    "voice",
+    "dashboard"
+  ],
+  "license": "MIT"
+}
